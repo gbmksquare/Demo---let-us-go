@@ -1,0 +1,13 @@
+
+devices([
+  "iPhone 6s"
+])
+
+languages([
+  "en-US"
+])
+
+clear_previous_screenshots true
+
+# Arguments to pass to the app on launch. See https://github.com/fastlane/fastlane/tree/master/snapshot#launch-arguments
+# launch_arguments(["-favColor red"])

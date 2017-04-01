@@ -1,0 +1,24 @@
+
+fastlane_version "2.24.0"
+
+default_platform :ios
+
+platform :ios do
+  before_all do
+    # Before
+  end
+
+  desc "App icon badge demo"
+  lane :demo do
+    version = "#{get_version_number}.#{get_build_number}"
+    badge(shield: "Version-#{version}-blue")
+  end
+
+  after_all do |lane|
+    # Success
+  end
+
+  error do |lane, exception|
+    # Error
+  end
+end
